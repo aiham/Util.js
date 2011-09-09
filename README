@@ -1,3 +1,62 @@
 Util.js
 
-Javascript utility functions that might need to reuse
+Javascript utility functions that I might need to reuse
+
+---
+
+window.util
+
+  + boolean hasOwn (string key)
+      Reference to Object.prototype.hasOwnProperty
+
+  + string toString ()
+      Reference to Object.prototype.toString
+
+  + int push (mixed element1, ... mixed elementN)
+      Reference to Array.prototype.push
+
+  + int indexOf (mixed searchElement, int fromIndex = null)
+      Reference to Array.prototype.indexOf with a fallback for old browsers
+
+  + array filter (function fun, object thisp)
+      Reference to Array.prototype.filter with a fallback for old browsers
+
+  + string trim (string str)
+      Reference to String.prototype.trim with a fallback for old browsers
+
+  + object getProto (object obj)
+      Reference to Object.getPrototypeOf with a fallback for old browsers
+
+  + string ucfirst (string str)
+      Upper case first character of string
+
+  + int each (mixed o, function callback, object context = null, mixed data = null, boolean check_all = false)
+      Loops over arrays or objects
+
+  + array arrayDiff (array a, array b)
+
+  + mixed shallowClone (mixed o)
+
+  + string appendObjToUrl (string url, object obj)
+
+  + string queryStringFromUrl (string url)
+
+  + string objToQueryString (object obj)
+
+  + object queryStringToObj (string str)
+
+  + boolean isType (mixed o, string type)
+
+  + boolean isArray (mixed o)
+
+  + boolean isFunction (mixed o)
+
+  + boolean isObject (mixed o)
+
+  + boolean isBoolean (mixed o)
+
+  + boolean isUndefined (mixed o)
+
+  + boolean isNull (mixed o)
+
+  + boolean isString (mixed o)
