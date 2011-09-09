@@ -205,7 +205,7 @@
   };
 
   util.each(
-    'array,function,object,boolean,undefined,null,string'.split(','),
+    'array,function,object,boolean,undefined,null,string,number'.split(','),
     function (type) {
       type = util.ucfirst(type);
       util['is' + type] = function (o) {

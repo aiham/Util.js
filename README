@@ -60,3 +60,5 @@ window.util
   + boolean isNull (mixed o)
 
   + boolean isString (mixed o)
+
+  + boolean isNumber (mixed o)
