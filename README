@@ -33,6 +33,8 @@ window.util
   + int each (mixed o, function callback, object context = null, mixed data = null, boolean check_all = false)
       Loops over arrays or objects
 
+  + int randomInteger (int min, int max)
+
   + array arrayDiff (array a, array b)
 
   + mixed shallowClone (mixed o)

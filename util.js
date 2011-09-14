@@ -200,7 +200,12 @@
         function (object) {
           // May break if the constructor has been tampered with
           return object.constructor.prototype;
-        })
+        }),
+
+    // Random integer between min and max (inclusive)
+    randomInteger: function (min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
   };
 
