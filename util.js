@@ -205,6 +205,13 @@
     // Random integer between min and max (inclusive)
     randomInteger: function (min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
+    },
+
+    // Escape any HTML from user input
+    escapeHTML: function (text) {
+      var e = document.createElement('p');
+      e.appendChild(document.createTextNode(text));
+      return e.innerHTML;
     }
 
   };

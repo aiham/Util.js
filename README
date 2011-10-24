@@ -35,6 +35,9 @@ window.util
 
   + int randomInteger (int min, int max)
 
+  + string escapeHTML (string text)
+      Escape any HTML from user input
+
   + array arrayDiff (array a, array b)
 
   + mixed shallowClone (mixed o)
