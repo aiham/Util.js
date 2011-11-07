@@ -212,6 +212,24 @@
       var e = document.createElement('p');
       e.appendChild(document.createTextNode(text));
       return e.innerHTML;
+    },
+
+    // Cross browser XMLHttpRequest function
+    // Overwrites itself with the correct call depending on the browser being used for optimum efficiency
+    xhr: function () {
+
+      try { return (this.xhr = function () { return new XMLHttpRequest(); })(); } catch (e) {}
+
+      try { return (this.xhr = function () { return new ActiveXObject('Msxml2.XMLHTTP.6.0'); })(); } catch (e) {}
+
+      try { return (this.xhr = function () { return new ActiveXObject('Msxml2.XMLHTTP.3.0'); })(); } catch (e) {}
+
+      try { return (this.xhr = function () { return new ActiveXObject('Msxml2.XMLHTTP'); })(); } catch (e) {}
+
+      try { return (this.xhr = function () { return new ActiveXObject('Microsoft.XMLHTTP'); })(); } catch (e) {}
+
+      return (this.xhr = function () { return null; })();
+
     }
 
   };

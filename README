@@ -38,6 +38,9 @@ window.util
   + string escapeHTML (string text)
       Escape any HTML from user input
 
+  + XMLHttpRequest xhr ()
+      Cross browser XMLHttpRequest
+
   + array arrayDiff (array a, array b)
 
   + mixed shallowClone (mixed o)
